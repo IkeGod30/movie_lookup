@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <h1>Popular TV Show Lookup</h1>
-      <Searchbar />
+      <Searchbar onSubmit={fetchByTitle} />
 
     </div>
   );
