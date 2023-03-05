@@ -6,6 +6,10 @@ import { TVShowAPI } from '../Data/Data';
 export function Searchbar( { onSubmit }) {
 
     function submit(e) {
+        if(e.key == "Enter" && e.target.value.trim() !=="") {
+            // console.log("Send Search");
+            onSubmit(e.target.value);
+        }
         console.log(e.target.value);
 
     }
@@ -19,6 +23,7 @@ export function Searchbar( { onSubmit }) {
         <button className="btn btn-outline-success" type="submit">Search</button>
        
       </form>
+     
       
         </div>
     )
