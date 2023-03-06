@@ -1,12 +1,11 @@
-
 import { TVShowAPI } from './api/tv-show';
 import './global.css';
 import s from './style.module.css';
 import { useState, useEffect} from 'react';
 import { BACKDROP_BASE_URL} from './config';
 import { TVShowDetails} from "./components/TVShowDetails/TVShowDetails";
-import { Logo } from "./components/Logo/Logo";
-import LogoImg  from "./assets/images/logo.png";
+// import { Logo } from "./components/Logo/Logo";
+// import LogoImg  from "./assets/images/logo.png";
 import { TVShowListItem } from "./components/TVShowListItem/TVShowListItem";
 import { TVShowList } from "./components/TVShowList/TVShowList";
 
@@ -62,12 +61,12 @@ export function App() {
       <div className={s.header}>
         <div className="row">
           <div className="col-4">
-            <Logo img={LogoImg} title={"What to Watch"} subtitle={"Find a Show you like"} />
+            {/* <Logo img={LogoImg} title={"What to Watch"} subtitle={"Find a Show you like"} /> */}
           </div>
 
-           {/* <div className="col-md-12 col-lg-4">
+           <div className="col-md-12 col-lg-4">
             <input style={{ width: "100%" }} type="text" />
-           </div> */}
+           </div>
 
         </div>
       </div>
@@ -85,70 +84,4 @@ export function App() {
   
 }
 
-
-
-
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import './App.css';
-// import { TVShowAPI } from './Data/Data';
-// import { Searchbar } from './components/searchbar';
-// import { useState, useEffect } from 'react';
-
-
-
-// // TVShowAPI.fetchPopulars();
-
-// function App() {
-
-//     const [currentTVShow, setcurrentTVShow] = useState();
-  
-//     async function fetchByTitle(title) {
-//       const searchResponse = await TVShowAPI.fetchByTitle(title);
-//       if(searchResponse.length > 0) {
-//       setcurrentTVShow(searchResponse[0]);
-//       }
-//     }
-
-//     useEffect(() => {
-//       fetchByTitle();
-//       }, []);
-  
-  
-//   return (
-//     <div className="App">
-//       <h1>Popular TV Show Lookup</h1>
-//       <Searchbar onSubmit={fetchByTitle} />
-//       {/* <p>{ outcome }</p> */}
-
-//       {/* <p>{ setcurrentTVShow.name }</p> */}
-
-//     </div>
-//   );
-// }
-
-// export default App;

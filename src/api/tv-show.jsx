@@ -1,5 +1,5 @@
 import axios from "axios"
-import { FAKE_POPULARS, FAKE_RECOMMENDATIONS } from "./fake_data";
+// import { FAKE_POPULARS, FAKE_RECOMMENDATIONS } from "./fake_data";
 import { BASE_URL, API_KEY_PARAM, BACKDROP_BASE_URL } from "../config";
 
 // https://api.themoviedb.org/3/tv/popular?api_key=<<api_key>>&language=en-US&page=1
